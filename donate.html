@@ -1,0 +1,262 @@
+<?php
+    include("donate.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="18x18">
+    <title>Donate</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet"/>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <!--Google Fonts Ico-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--AOS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color:rgb(133, 94, 206);">
+
+    <section id="navbar">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" style="background-color: rgb(236, 236, 236); margin-top: -3px;">
+            <div class="container" style="margin-bottom: -7px">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" height="53" width="63" alt="logo" loading="lazy" style="margin-top: -1px;"> 
+                    <font face="Bradley Hand ITC" class="ab"><b>Serenity Circle</b></font>
+                </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active hover" aria-current="page" style="color: rgb(0, 67, 129);" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover" style="color: rgb(0, 67, 129);" href="#">Join Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link hover" style="color: rgb(0, 67, 129);" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link hover" style="color:#115723;" href="donate.html">
+                            <i class="fas fa-hand-holding-heart" height="5" width="5"> Donate</i>
+                        </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Navbar -->
+    </section>
+
+    <section id="header">
+        <div style="margin-top:70px; background-image: url(images/donatebg.jpg); height:130px;">
+            <center><div style="height: 24px;"></div>
+                <h1 style="font-family:serif; color:white">DONATE US</h1>
+                <h5 style="font-family:serif; color:white">#SaveTheHappiness</h5>
+            </center>
+        </div>
+    </section>
+
+    <section id="donate-form">
+        <font style="color: white; font-family:sans-serif; font-size: large;">
+        <div class="container mt-5" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    <h3 style="font-family:'Times New Roman', Times, serif;">Please Donate Us:</h3><br>
+                    <form action="donate.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="inputname">Full Name :</label>
+                            <input type="text" class="form-control" style="width: 450px;" name="fullname" id="inputname" placeholder="Full Name" required>
+                        </div>
+                
+                        <div class="form-group col-md-5">
+                            <label for="inputEmail">E-mail :</label>
+                            <input type="email" class="form-control" style="width: 450px;" name="email" id="inputEmail" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group col-md-5">
+                            <label for="inputPhone">Phone :</label>
+                            <input type="tel" class="form-control" style="width: 450px;" name="phone" id="inputPhone" max="10" placeholder="1234567890" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="inputCity">City :</label>
+                                <input type="text" style="width: 450px;" name="city" class="form-control" id="inputCity" placeholder="City" required>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-4">
+                                <label for="inputdob">Date Of Birth :</label>
+                                <input type="date" name="dob" id="inputdob" min="1990-01-01" max="2020-12-31" value="1990-01-01" required>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-5">
+                                <label for="inputAmount">Amount :</label>
+                                <input type="number" name="amount" class="form-control" style="width: 250px"; id="inputAmount" placeholder="₹" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                                I Agree To The Terms And Conditions..
+                            </label>
+                            </div>
+                        </div><br>
+                            <h5><button class="button" name="submit" type="submit" style="color: white;">DONATE</button></h5>
+                    </form>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Why Donate Us ?</h3><br>
+                    <ul style="font-size:22px">
+                        <li>To develop a large volunteer force to fight against suicides and other mental issues.</li>
+                        <li>To provide 24x7 suicide prevention emotional support hotline services.</li>
+                        <li>Increase the awareness campaign.</li>
+                        <li>Support suicide survivors to cope with their grief and loss.</li>
+                        <li>Develop strategies to reach out to a larger group of people to prevent suicides</li>
+                    </ul>
+                    <br>
+                    <h4><a href="donators.php" class="hover-red" style="color: red;">
+                        <i class="fas fa-hand-point-right"></i> 
+                        Click Here To View Our Donators</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        </font>
+    </section>
+
+    <section id="joinus">
+        <div class="container-fluid" style="background-image: url(images/i.jpg); width: 100%; background-repeat: no-repeat; height: 250px; margin-top: 60px;">
+            <div class="container">
+                <div style="height: 75px;"></div>
+                <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                    
+                        <h3 style="font-family:'Times New Roman', Times, serif; color:rgb(26, 79, 192); font-weight: bold; word-spacing: 4px;">JOIN US AND BECOME A VOLUNTEER<br><br>
+                        <a class="button" href="#">JOIN US</a></h3>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container-fluid" style="height: 100%;">
+            <center>
+                <div style="height: 70px;"></div>
+            <div class="container donatef" data-aos="zoom-in" data-aos-duration="2000">
+                Serenity Circle Is An Organization Which Help Peoples Who Are Fighting With 
+                Depression, Anxiety, Insecurity, Loneliness And Other Mental Issues,
+                We Are Ready To Help You 24 X 7 Hours. Just Contact Us.
+            </div>
+            <div style="height: 70px;"></div>
+            </center>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="fluid-container contact-bg">
+            <div class="container">
+            <div class="row" style="align-items: center;">
+                <div class="col" style="align-items: center;">
+                    <div class="container" style="align-items: center;">
+                        <h2 style="font-family:serif; font-weight: 700; color: rgba(0, 26, 22, 0.562);">
+                            <i class="far fa-envelope"></i> Send Us Your Query
+                        </h2> <br>
+                        <font style="font-size:18px; font-weight: 800; color: rgba(0, 26, 22, 0.562);">
+                            <div>
+                                <i class="fas fa-angle-right"></i>  Address : Serenity-Circle, Nagpur, Maharshtra<br>
+                                <span> Pin-Code - 440008</span>
+                            </div><br>
+                            <div>
+                                <i class="fas fa-angle-right"></i>  E-mail : serenitycircle153@gmail.com
+                            </div><br>
+                            <div>
+                                <i class="fas fa-angle-right"></i>  Contact : +91 9665560085
+                            </div>
+                        </font>
+                    </div>
+                </div>
+                <div class="col" style="margin-top: 20px;">
+                    <div class="container">
+                        <div style="float: inline-end;">
+                        <form class="contact">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="fname" class="form-label ctext">First Name</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <label for="lname" class="form-label ctext">Last Name</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="Last name" aria-label="Last name">
+                                </div>
+                            </div>
+                    
+                            <div class="mt-1">
+                                <label for="exampleFormControlInput1" class="form-label ctext">Email Address :</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mt-1">
+                                <label for="exampleFormControlTextarea1" class="form-label ctext">Message :</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Message"></textarea>
+                            </div>
+                            <div class="mb-0" style="margin-top: 15px;">
+                                <input type="button" class="sendbutton" value="Send Message"></a>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid" style="background-color:darkslateblue; color: white; height: 100%;">
+        <div style="height: 6px;"></div>
+        <center>
+            <div class="container">
+                Copyright © Khushboo Ninawe
+            </div>
+        </center>
+    </div>
+
+</body>
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+</html>
